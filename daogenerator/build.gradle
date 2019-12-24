@@ -1,9 +1,0 @@
-//apply plugin: 'java'
-apply plugin: 'application'
-
-//sourceCompatibility = 1.8
-mainClassName = "tornaco.dao.DaoGenerator"
-
-dependencies {
-    compile "org.greenrobot:greendao-generator:${rootProject.ext.greendaoVersion}"
-}

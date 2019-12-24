@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/action_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/app_name" />
+
+        <item
+            android:id="@+id/action_ext"
+            android:icon="@drawable/ic_extension_black_24dp"
+            android:title="@string/app_ext" />
+
+        <item
+            android:id="@+id/action_tools"
+            android:icon="@drawable/ic_pan_tool_black_24dp"
+            android:title="@string/title_tools" />
+    </group>
+
+    <item android:title="@string/title_others">
+        <menu>
+            <item
+                android:id="@+id/action_settings"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="@string/title_common_settings" />
+
+            <item
+                android:id="@+id/action_play_version"
+                android:icon="@drawable/ic_shop_black_24dp"
+                android:title="@string/title_get_play" />
+            <item
+                android:id="@+id/action_donate"
+                android:icon="@drawable/ic_attach_money_black_24dp"
+                android:title="@string/title_donate" />
+            <item
+                android:id="@+id/action_about"
+                android:icon="@drawable/ic_info_black_24dp"
+                android:title="@string/title_about" />
+        </menu>
+    </item>
+
+</menu>

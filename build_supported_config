@@ -9,6 +9,7 @@ app_start
 app_green
 app_lk
 app_rfk
+app_trk
 app_lazy
 app_firewall
 app_smart_sense
@@ -16,5 +17,9 @@ app_privacy
 app_comp_edit
 app_comp_replace
 app_doze
+app_prop
+app_package_install_verify
+app_wakelock_blocker
+app_workflow
 play
 debug

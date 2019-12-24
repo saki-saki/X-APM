@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/title_feedback">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="draw_vibrate_enabled"
+            android:persistent="true"
+            android:title="@string/title_draw_vibrate" />
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="unlock_vibrate_enabled"
+            android:persistent="false"
+            android:title="@string/title_unlock_vibrate_enabled" />
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="error_vibrate_enabled"
+            android:persistent="false"
+            android:title="@string/title_error_vibrate_enabled" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/title_themes">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="show_app_icon_enabled"
+            android:title="@string/title_show_app_icon" />
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:dependency="show_app_icon_enabled"
+            android:key="key_crop_circle_enabled"
+            android:title="@string/title_crop_enabled" />
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="key_dynamic_color_enabled"
+            android:summary="@string/summary_dynamic_color_enabled"
+            android:title="@string/title_dynamic_color_enabled" />
+
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:defaultValue="#ff4081"
+            android:key="key_def_verifier_color"
+            android:summary="@string/summary_verifier_theme_color"
+            android:title="@string/title_verifier_theme_color" />
+
+        <!--<SwitchPreference-->
+            <!--android:defaultValue="false"-->
+            <!--android:key="key_custom_background_enabled"-->
+            <!--android:summary="@string/summary_custom_background_enabled"-->
+            <!--android:title="@string/title_custom_background_enabled" />-->
+
+        <!--<Preference-->
+            <!--android:dependency="key_custom_background_enabled"-->
+            <!--android:key="key_custom_background_picker"-->
+            <!--android:title="@string/title_custom_background_picker" />-->
+    </PreferenceCategory>
+
+</PreferenceScreen>

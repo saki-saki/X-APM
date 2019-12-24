@@ -1,0 +1,57 @@
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/shortcut_running_services"
+        android:shortcutId="running_services"
+        android:shortcutLongLabel="@string/title_running_services"
+        android:shortcutShortLabel="@string/title_running_services"
+        tools:targetApi="n_mr1">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="github.tornaco.xposedmoduletest.ui.activity.helper.RunningServicesActivity"
+            android:targetPackage="github.tornaco.xposedmoduletest" />
+        <categories android:name="android.shortcut.apm" />
+    </shortcut>
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/shortcut_apps"
+        android:shortcutId="comp"
+        android:shortcutLongLabel="@string/title_component_manager"
+        android:shortcutShortLabel="@string/title_component_manager"
+        tools:targetApi="n_mr1">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="github.tornaco.xposedmoduletest.ui.activity.comp.PackageViewerActivity"
+            android:targetPackage="github.tornaco.xposedmoduletest" />
+        <categories android:name="android.shortcut.apm" />
+    </shortcut>
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/shortcut_comp_replace"
+        android:shortcutId="comp_replacement"
+        android:shortcutLongLabel="@string/title_comp_replacement"
+        android:shortcutShortLabel="@string/title_comp_replacement"
+        tools:targetApi="n_mr1">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="github.tornaco.xposedmoduletest.ui.activity.comp.ComponentReplacementActivity"
+            android:targetPackage="github.tornaco.xposedmoduletest" />
+        <categories android:name="android.shortcut.apm" />
+    </shortcut>
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/shortcut_start_nav"
+        android:shortcutId="start"
+        android:shortcutLongLabel="@string/title_app_auto_start"
+        android:shortcutShortLabel="@string/title_app_auto_start"
+        tools:targetApi="n_mr1">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="github.tornaco.xposedmoduletest.ui.activity.start.StartAppNavActivity"
+            android:targetPackage="github.tornaco.xposedmoduletest" />
+        <categories android:name="android.shortcut.apm" />
+    </shortcut>
+    <!-- Specify more shortcuts here. -->
+</shortcuts>

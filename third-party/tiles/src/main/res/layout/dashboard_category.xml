@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card"
+    style="@style/CategoryCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dashboard_category_bot_margin"
+    android:paddingBottom="@dimen/dashboard_padding_bottom"
+    app:cardCornerRadius="@dimen/dashboard_category_radius"
+    app:cardElevation="@dimen/dashboard_category_elevation">
+
+    <LinearLayout
+        android:id="@+id/category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/category_title"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dashboard_category_title_height"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:paddingEnd="@dimen/dashboard_category_title_margin_start"
+                android:paddingStart="@dimen/dashboard_category_title_margin_start"
+                android:singleLine="true"
+                android:text="@string/app_name"
+                android:textAppearance="@style/TextAppearance.CategoryTitle"
+                android:textColor="?colorAccent" />
+
+            <ImageButton
+                android:id="@+id/dashboard_more"
+                android:layout_width="@dimen/dashboard_category_btn_size"
+                android:layout_height="@dimen/dashboard_category_btn_size"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dashboard_category_title_margin_start"
+                android:background="@drawable/dashboard_btn_status_action_trans"
+                android:src="@drawable/ic_more_vert_black_24dp"
+                android:tint="@color/tile_icon_tint" />
+        </RelativeLayout>
+
+        <dev.nick.tiles.tile.ContainerView
+            android:id="@+id/category_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/category_summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/dashboard_category_title_margin_start"
+                android:paddingLeft="@dimen/dashboard_category_title_margin_start"
+                android:paddingRight="@dimen/dashboard_category_title_margin_start"
+                android:paddingTop="@dimen/dashboard_category_title_margin_start"
+                android:textAppearance="@style/TextAppearance.Small" />
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

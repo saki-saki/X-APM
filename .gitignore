@@ -47,7 +47,7 @@ captures/
 .externalNativeBuild
 
 # Google Services (e.g. APIs or Firebase)
-google-services.json
+# google-services.json
 
 # Freeline
 freeline.py
@@ -66,3 +66,8 @@ freeline_project_description.json*.iml
 .idea/
 keys/keys_android.jks
 gradle.properties
+crowdin.properties
+
+
+.project
+.settings/
